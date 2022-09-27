@@ -1,0 +1,34 @@
+.lorem {
+    @include flex(row);
+    gap: 30px;
+    padding: 94px 0 0 0;
+    &__text {
+      font-family:$standard-font;
+      line-height:map-get($letter-spacing,standard) ;
+      line-height: 1.71;
+      width: 270px;
+      text-align: left;
+    }
+    &__icon {
+      @include flexCenter(row);
+      background-color:$background-card;
+      height: 120px;
+      width: 270px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    
+    &:hover {
+      fill:$hover-text;
+    } 
+    }
+  &__heading {
+    font-weight:map-get($font-weight,bold);
+    font-size:map-get($font-size,standard);
+    line-height: 1.2em;
+    letter-spacing:map-get($letter-spacing,standard);
+    text-transform: uppercase;
+    color:black;
+    margin: 0 0 10px 0;
+    line-height: 1.1428571428571428;
+  
+ }}

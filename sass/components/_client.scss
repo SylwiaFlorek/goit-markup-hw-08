@@ -1,0 +1,18 @@
+.client {
+    @include flex(row);
+    gap: 30px;
+    padding: 0;
+
+  &__logo {
+    border-radius: 4px;
+    border:  $icon-background solid 1px;
+    width: 170px;
+    height: 92px;
+    fill: $icon-background;
+    transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  :focus{
+    fill:$hover-text;
+    border:$hover-text solid 1px
+  }}}

@@ -1,0 +1,97 @@
+footer{
+    background-color:$background-footer;
+    padding:60px 0
+  }
+  .footer{
+    @include flex(row);
+    justify-content:center;
+    gap:70px;
+
+  &__logo{
+    font-family:$logo-font;
+    font-size:map-get($font-size,logo-font);
+    font-weight:map-get($font-weight,bold);
+    color:$primary-color;
+    line-height:1.193;
+  
+  &-color{
+    color:$hover-text;
+  }}
+  &__adress p {
+    font-style: normal;
+    color: $primary-color;
+    padding: 0;
+  }
+  &__links li{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+    margin:9px 0;
+  }
+  &__link{
+    color:$footer-link;
+    transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover{
+    color:$hover-text;
+  }
+  &__heading{
+    font-family:$standard-font;
+    font-weight:map-get($font-weight,bold);
+    font-size:map-get($font-size,standard);
+    color:$primary-color;
+    text-transform:uppercase;
+    margin:20px 0 20px 0px;
+  }
+  &__icons{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+  }
+  &__icon{
+    width:44px;
+    height:44px;
+    background-color:$footer-icon;
+    border-radius:50%;
+    fill:$primary-color;
+    transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon:hover,
+  __icon :focus{
+    background-color:$hover-text;
+    fill:$primary-color;
+    cursor:pointer;
+  }
+    &__sign-up{
+      background-color:rgba(0,0,0,0);
+      border:solid rgba(255,255,255,.3) 1px;
+      border-radius:4px;
+      width:358px;
+      height:50px;
+      color:rgba(255,255,255,.6);
+      padding:16px;
+      font-family:$standard-font;
+      font-size:map-get($font-size,enlarged);
+    }
+    &__button{
+      background-color:$hover-text;
+      color:$primary-color;
+      width:200px;
+      height:50px;
+      align-items:center;
+      font-size:map-get($font-size,enlarged);
+      font-weight:map-get($font-weight,bold);
+      border-radius:4px;
+      border-style:none;
+      margin-left:12px;
+      text-align:left;
+      padding-left:42px;
+      cursor:pointer;
+    }
+    &__button-icon{
+      fill:$primary-color;
+      position:absolute;
+      width:50px;
+      height:24px;
+    }}
+  
