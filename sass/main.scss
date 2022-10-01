@@ -6,6 +6,7 @@
 @import "./components/section-top";
 @import "./components/lorem";
 @import "./components/job";
+@import "./components/social";
 @import "./components/client";
 @import "./components/footer";
 @import "./components/portfolio-main";
@@ -15,10 +16,37 @@ body {
   font-family:$standard-font,$logo-font;
   background-color:$primary-color;
   color: $primary-text;
-  font-size: map-get($font-size, standard);
+  font-size:$font-standard;
   letter-spacing: map-get($letter-spacing, standard);
 }
 .container {
   width: 1200px;
   @include center;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 480) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+
+    margin: 0 auto;
+  }
+}
+a:focus-within {
+  color: $hover-text;
+  fill: $hover-text;
 }

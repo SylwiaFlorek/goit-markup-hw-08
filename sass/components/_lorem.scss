@@ -1,34 +1,96 @@
+@media (min-width: 480px){
 .lorem {
     @include flex(row);
+    @include flexCenter(column);
     gap: 30px;
-    padding: 94px 0 0 0;
+    padding: 60px 15px 60px 15px;
+    justify-content: center;
+    width: 100%;
+    & > li {
+      width: 100%;
+    }
     &__text {
-      font-family:$standard-font;
-      line-height:map-get($letter-spacing,standard) ;
-      line-height: 1.71;
-      width: 270px;
-      text-align: left;
+    line-height: 1.71;
+    text-align: center;
     }
     &__icon {
       @include flexCenter(row);
       background-color:$background-card;
       height: 120px;
-      width: 270px;
+      width: 100%;
       border-radius: 4px;
       margin-bottom: 30px;
-    
-    &:hover {
-      fill:$hover-text;
-    } 
     }
+    
   &__heading {
-    font-weight:map-get($font-weight,bold);
-    font-size:map-get($font-size,standard);
-    line-height: 1.2em;
-    letter-spacing:map-get($letter-spacing,standard);
-    text-transform: uppercase;
-    color:black;
+    font-weight: $font-bold;
+    color: $secondary-text;
+    font-size: $font-standard;
     margin: 0 0 10px 0;
-    line-height: 1.1428571428571428;
+    width: 100%;
+    text-align: center;
+ }}}
+
+
+ @media (min-width: 768px){
+ .lorem {
+  @include flex(row);
+  gap: 30px;
+  padding: 94px 0 0 0;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__text {
+  line-height: 1.71;
+}
+  }
+
+  &__icon {
+    @include flexCenter(row);
+    background-color:$background-card;
+    height: 120px;
+    width: 354px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  & > li {
+  flex-basis: calc((100% - 120px) / 2);
+  }
+ 
+&__heading {
+  font-weight: $font-bold;
+  color: $secondary-text;
+  font-size: $font-standard;
+  margin: 0 0 10px 0;
+}}
+
+
+@media (min-width: 1200px) {
+.lorem {
+  @include flex(row);
+  gap: 30px;
+  padding: 94px 0 0 0;
+  justify-content: center;
   
- }}
+  &__text {
+  line-height: 1.71;
+  }
+  &__icon {
+    @include flexCenter(row);
+    background-color:$background-card;
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  } 
+
+  & > li {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  
+&__heading {
+  font-weight: $font-bold;
+  color: $secondary-text;
+  font-size: $font-standard;
+  margin: 0 0 10px 0;
+}}}

@@ -1,0 +1,171 @@
+/*Nasz zespół*/
+.social {
+    background-color: #f5f4fa;
+    padding: 94px 0;
+  
+  &__list {
+    @include flexCenter(column);
+    gap: 30px;
+    padding: 0 15px;
+  }
+  &__item {
+    width: 270px;
+    height: 260px;
+  }
+  &__images {
+    @include flexCenter(column);
+    text-align: center;
+    background-color: $primary-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  &__name {
+    margin: 30px 0 10px 0;
+    line-height: 1.1875;
+    font-size: $font-enlarged;
+    font-weight: $font-medium;
+    color: $secondary-text;
+  }
+  &__text {
+    line-height: 1.1875;
+    font-size: $font-enlarged;
+    margin: 0 0 16px 0;
+  }
+  &__icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    width: 44px;
+    height: 44px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    fill: $icon-background;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    :focus {
+      @include hover-icon;
+  }}}
+
+
+
+
+
+  /*Nasz zespół*/
+@media (min-width: 1200px) {
+  .social {
+     background-color: #f5f4fa;
+     padding: 94px 0;
+   
+   &__list {
+    @include flexCenter(row);
+    gap: 30px;
+    flex-wrap: wrap;
+   }
+  }
+  
+   &__images {
+    text-align: center;
+    background-color: $primary-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 354px;
+    &__item {
+      max-width: 960px;
+      min-width: 320px;
+     }
+    }
+    
+   }
+   &__name {
+     margin: 30px 0 10px 0;
+     line-height: 1.1875;
+     font-size: $font-enlarged;
+     font-weight: $font-medium;
+     color: $secondary-text;
+   
+   }
+   &__text {
+     line-height: 1.1875;
+     font-size: $font-enlarged;
+     margin: 0 0 16px 0;
+   }
+   &__icons {
+     display: flex;
+     gap: 10px;
+     margin-bottom: 30px;
+   }
+   &__icon {
+     width: 44px;
+     height: 44px;
+     background-color: $primary-color;
+     border-radius: 50%;
+     fill: $icon-background;
+     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+     &:hover,
+     :focus {
+       @include hover-icon;
+   }}}}
+ 
+
+
+
+/*Nasz zespół*/
+@media (min-width: 1200px) {
+ .social {
+    background-color: #f5f4fa;
+    padding: 94px 0;
+  
+  &__list {
+    @include flexCenter(row);
+    gap: 30px;
+  }
+  &__item {
+    width: 270px;
+    height: 260px;
+  }
+  &__images {
+    @include flexCenter(column);
+    text-align: center;
+    width: 270px;
+    background-color: $primary-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__name {
+    margin: 30px 0 10px 0;
+    line-height: 1.1875;
+    font-size: $font-enlarged;
+    font-weight: $font-medium;
+    color: $secondary-text;
+  
+  }
+  &__text {
+    line-height: 1.1875;
+    font-size: $font-enlarged;
+    margin: 0 0 16px 0;
+  }
+  &__icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    width: 44px;
+    height: 44px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    fill: $icon-background;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    :focus {
+      @include hover-icon;
+  }}}}
