@@ -1530,7 +1530,7 @@ footer {
   width: 100%;
   height: 294px;
 }
-.buttons .project__name {
+.buttons .project__item__name {
   color: #212121;
   font-size: 18px;
   font-weight: 700;
@@ -1538,23 +1538,23 @@ footer {
   line-height: 2;
   margin: 20px 0 4px 24px;
 }
-.buttons .project__style {
+.buttons .project__item__style {
   border: transparent solid 1px;
 }
-.buttons .project__text {
+.buttons .project__item__text {
   line-height: 1.88;
   font-size: 14px;
   margin: 0 24px 20px 24px;
 }
-.buttons .style-line {
+.buttons .project .style-line {
   border-bottom: #f5f4fa solid 1px;
 }
-.buttons .description-hidden {
+.buttons .project .description-hidden {
   width: 448px;
   position: absolute;
   overflow: hidden;
 }
-.buttons .description-slidein {
+.buttons .project .description-slidein {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: translateY(100%);
