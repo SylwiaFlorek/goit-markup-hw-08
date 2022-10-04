@@ -1,53 +1,62 @@
 footer{
     background-color:$background-footer;
-    padding:60px 0
+    width: 100%;
   }
-  @media (min-width: 480px) {
   .footer{
-    @include flex(row);
-    justify-content:center;
-    gap:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 0;
+  &__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
 
   &__logo{
     font-family:$logo-font;
-    font-size:$logo-font;
+    font-size:24px;
     font-weight:$font-bold;
     color:$primary-color;
     line-height:1.193;
-  
+    
   &-color{
     color:$hover-text;
   }}
   &__adress p {
     font-style: normal;
     color: $primary-color;
-    padding: 0;
+    margin: 20px 0 0 0;
+    text-align: center;
   }
   &__links li{
     display:flex;
     flex-direction:column;
     gap:9px;
     margin:9px 0;
+    text-align: center;
   }
   &__link{
     color:$footer-link;
     transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  
   &__link:hover{
     color:$hover-text;
-  }
+  }}
   &__heading{
-    font-family:$standard-font;
+    text-align: center;
     font-weight:$font-bold;
     font-size:$font-standard;
     color:$primary-color;
     text-transform:uppercase;
-    margin:20px 0 20px 0px;
+    margin: 0 0 20px 0px;
   }
   &__icons{
     display:flex;
     gap:10px;
-    margin-bottom:30px;
   }
   &__icon{
     width:44px;
@@ -59,9 +68,7 @@ footer{
   }
   &__icon:hover,
   __icon :focus{
-    background-color:$hover-text;
-    fill:$primary-color;
-    cursor:pointer;
+    @include hover-icon;
   }
     &__sign-up{
       background-color:rgba(0,0,0,0);
@@ -87,21 +94,31 @@ footer{
       margin-left:12px;
       text-align:left;
       padding-left:42px;
-      cursor:pointer;
+      cursor: pointer;
     }
     &__button-icon{
       fill:$primary-color;
       position:absolute;
       width:50px;
       height:24px;
-    }}}
+    }}
   
     @media (min-width: 768px) {
       .footer{
-        @include flex(row);
-        justify-content:center;
-        gap:70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 60px;
+        padding: 60px 0;
     
+        &__container {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
       &__logo{
         font-family:$logo-font;
         font-size:$logo-font;
@@ -113,11 +130,13 @@ footer{
         color:$hover-text;
       }}
       &__adress p {
-        font-style: normal;
-        color: $primary-color;
-        padding: 0;
+       font-style: normal;
+       color: $primary-color;
+       margin: 20px 0 0 0;
+       text-align: center;
       }
       &__links li{
+        text-align: center;
         display:flex;
         flex-direction:column;
         gap:9px;
@@ -136,12 +155,11 @@ footer{
         font-size:$font-standard;
         color:$primary-color;
         text-transform:uppercase;
-        margin:20px 0 20px 0px;
+        margin: 0 0 20px 0px;
       }
       &__icons{
         display:flex;
         gap:10px;
-        margin-bottom:30px;
       }
       &__icon{
         width:44px;
@@ -161,7 +179,7 @@ footer{
           background-color:rgba(0,0,0,0);
           border:solid rgba(255,255,255,.3) 1px;
           border-radius:4px;
-          width:358px;
+          width:100%;
           height:50px;
           color:rgba(255,255,255,.6);
           padding:16px;
@@ -181,7 +199,8 @@ footer{
           margin-left:12px;
           text-align:left;
           padding-left:42px;
-          cursor:pointer;
+          margin: 20px 0 0 0;
+          cursor: pointer;
         }
         &__button-icon{
           fill:$primary-color;
@@ -255,7 +274,7 @@ footer{
             background-color:rgba(0,0,0,0);
             border:solid rgba(255,255,255,.3) 1px;
             border-radius:4px;
-            width:358px;
+            width:100%;
             height:50px;
             color:rgba(255,255,255,.6);
             padding:16px;

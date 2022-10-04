@@ -43,7 +43,6 @@
   &__text {
   line-height: 1.71;
 }
-  }
 
   &__icon {
     @include flexCenter(row);
@@ -62,7 +61,7 @@
   color: $secondary-text;
   font-size: $font-standard;
   margin: 0 0 10px 0;
-}}
+}}}
 
 
 @media (min-width: 1200px) {

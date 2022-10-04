@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   
   <title>WebStudio</title>
+
 </head>
 <body>
   <div>
@@ -50,8 +51,20 @@
        </li>
     </ul>
  
+    <button 
+    class="header__mobile js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu">
+      <svg class="header__mobile-menu">
+        <use
+          xlink:href="./images/icons.svg#mobile-menu"
+          width="24"
+          height="16 "
+        ></use>
+      </svg>
+    </button> 
+  </div>
   </header>
-</div>
 
 <div class="header-line-border"></div>
       <main>
@@ -83,7 +96,7 @@
           konkurencji </p>
     </div>
   </div>
-    <img src=images/port1.jpg alt="technocrack" class="box__item">
+    <img src=images/port1.jpg alt="technocrack" >
     <div class="project__style">
     <h4 class="project__name">Technocrack</h4>
             <p class="project__text">Strona internetowa</p></div>
@@ -287,10 +300,30 @@
       ></use>
     </svg>
   </button>
+
+  <ul class="mobile__menu">
+    <li><a href="./index.html" class="mobile__menu-link">Agencja</a></li>
+    <li><a href="./portfolio.html" class="mobile__menu-link">Portfolio</a></li>
+    <li><a href="./contacts.html" class="mobile__menu-link">Kontakty</a></li>
+  </ul>
+  <div class="mobile__links">
+    <ul class="mobile__contacts">
+      <li><a href="tel:+48111111111" class="mobile__contacts-phone">+48 111 111 111</a></li>
+      <li><a href="mailto:info@devstudio.com" class="mobile__contacts-email">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile__socials">
+      <li><a href="https://instagram.com" class="mobile__socials-link">Instagram</a></li>
+      <li class="mobile__socials-link">|</li>
+      <li><a href="https://twitter.com" class="mobile__socials-link">Twitter</a></li>
+      <li class="mobile__socials-link">|</li>
+      <li><a href="https://facebook.com" class="mobile__socials-link">Facebook</a></li>
+      <li class="mobile__socials-link">|</li>
+      <li><a href="https://linkedin.com" class="mobile__socials-link">LinkedIn</a></li>
+    </ul> 
 </div>
 </div>
 
 </footer>
-<script src="./js/modal.js"></script>
+<script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
