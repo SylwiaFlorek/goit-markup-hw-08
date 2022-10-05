@@ -1452,7 +1452,7 @@ footer {
   border-bottom: #ececec solid 1px;
 }
 
-.buttons .filters {
+.buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1465,7 +1465,7 @@ footer {
   margin: 94px 0 0 0;
   padding: 0 15px;
 }
-.buttons .filters__style {
+.buttons__style {
   background-color: #f5f4fa;
   border-width: 0;
   height: 38px;
@@ -1478,14 +1478,15 @@ footer {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.buttons .filters__style:focus, .buttons .filters__style:hover {
+.buttons__style:focus, .buttons__style:hover {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: #2196f3;
   color: #fff;
   cursor: pointer;
 }
-.buttons .project {
+
+.project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1505,7 +1506,7 @@ footer {
   margin: 50px 0;
   padding: 0 15px;
 }
-.buttons .project__item {
+.project__item {
   border: #eeeeee solid 1px;
   -ms-flex-preferred-size: calc((100% - 90px) / 3);
       flex-basis: calc((100% - 90px) / 3);
@@ -1513,24 +1514,21 @@ footer {
   margin: 0;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
 }
-.buttons .project__item:hover .description-slidein {
+.project__item:hover .description-slidein {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.buttons .project__item:hover:hover,
-.buttons .project__item:hover :focus > li {
+.project__item:hover:hover,
+.project__item:hover :focus > li {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.buttons .project__item img {
-  max-width: 790px;
-  min-width: 450px;
-  width: 100%;
+.project__item img {
+  width: 450px;
   height: 294px;
 }
-.buttons .project__item__name {
+.project__item__name {
   color: #212121;
   font-size: 18px;
   font-weight: 700;
@@ -1538,23 +1536,23 @@ footer {
   line-height: 2;
   margin: 20px 0 4px 24px;
 }
-.buttons .project__item__style {
+.project__item__style {
   border: transparent solid 1px;
 }
-.buttons .project__item__text {
+.project__item__text {
   line-height: 1.88;
   font-size: 14px;
   margin: 0 24px 20px 24px;
 }
-.buttons .project .style-line {
+.project .style-line {
   border-bottom: #f5f4fa solid 1px;
 }
-.buttons .project .description-hidden {
+.project .description-hidden {
   width: 448px;
   position: absolute;
   overflow: hidden;
 }
-.buttons .project .description-slidein {
+.project .description-slidein {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: translateY(100%);
