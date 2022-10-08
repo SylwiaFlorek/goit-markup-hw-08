@@ -1404,12 +1404,11 @@ footer {
   .footer__link:hover {
     color: #2196f3;
   }
-  .footer__header {
+  .footer__heading {
     font-weight: 700;
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
-    margin: 20px 0 20px 0px;
   }
   .footer__icons {
     display: -webkit-box;

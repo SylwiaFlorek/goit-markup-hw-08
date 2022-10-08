@@ -1,3 +1,4 @@
+@media (min-width: 305px) {
 .header-line-border {
   border-bottom: $header-line solid 1px;
 }
@@ -95,6 +96,7 @@
   line-height: 1.6;
   padding-left: 24px;
   padding-top: 20px;
+}
 }
 @media (min-width: 768px) {
   .header-line-border {
