@@ -1,4 +1,4 @@
-
+@media (min-width: 480px){
   .block {
   @include flexCenter(column);
   padding: 60px 0;
@@ -16,6 +16,7 @@
   .mobile-hidden {
     display: none;
   }
+}
 @media (min-width: 768px) {
 .block{
     @include flexCenter(column);
