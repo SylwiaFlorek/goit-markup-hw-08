@@ -9,8 +9,8 @@
     padding: 0 15px;
   }
   &__item {
-    width: 450px;
-    height: 460px;
+    width: 100%;
+    height:100%;
   }
   &__images {
     @include flexCenter(column);
