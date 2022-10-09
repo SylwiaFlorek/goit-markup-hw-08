@@ -58,7 +58,8 @@
       font-size: $font-link-mobile-menu;
 
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         color: $hover-text;
       }
     }

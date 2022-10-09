@@ -1,3 +1,4 @@
+@media (min-width: 305px) {
 .header {
   display: flex;
   align-items: center;
@@ -31,7 +32,7 @@
     &:hover,
     &:focus {
       fill: $hover-text;
-    }}}
+    }}}}
 
 @media (min-width: 768px) {
 .header {

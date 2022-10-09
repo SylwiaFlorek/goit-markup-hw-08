@@ -1,3 +1,4 @@
+@media (min-width: 305px) {
 .client {
   @include flexCenter(row);
   flex-wrap: wrap;
@@ -15,7 +16,7 @@
   :focus{
     fill:$hover-text;
     border:$hover-text solid 1px
-  }}}
+  }}}}
 
   @media (min-width: 768px) {
   .client {

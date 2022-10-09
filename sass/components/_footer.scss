@@ -1,3 +1,4 @@
+@media (min-width: 305px) {
 footer{
     background-color:$background-footer;
     width: 100%;
@@ -104,7 +105,7 @@ footer{
       position:absolute;
       width:50px;
       height:24px;
-    }}
+    }}}
   
     @media (min-width: 768px) {
       .footer{
@@ -213,9 +214,9 @@ footer{
           height:24px;
         }}}
 
-        @media (min-width: 1200px) {
-        footer {
-    background-color: $background-footer;
+  @media (min-width: 1200px) {
+  footer {
+  background-color: $background-footer;
   }
   .footer {
     display: flex;
@@ -225,7 +226,7 @@ footer{
 
     &__container {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: start;
       text-align: left;
     }
@@ -245,7 +246,8 @@ footer{
     &__address {
       font-style: normal;
       color: $primary-color;
-      margin: 20px 0 0 0;
+      padding-top: 20px;
+      
     }
 
     &__links {

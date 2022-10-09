@@ -1,6 +1,5 @@
-@media (min-width: 480px){
+@media (min-width: 305px) {
 .lorem {
-    @include flex(row);
     @include flexCenter(column);
     gap: 30px;
     padding: 60px 15px 60px 15px;
@@ -11,11 +10,12 @@
     }
     &__text {
     line-height: 1.71;
-    text-align: center;
     }
+    
     &__icon {
       @include flexCenter(row);
       background-color:$background-card;
+    
       height: 120px;
       width: 100%;
       border-radius: 4px;
