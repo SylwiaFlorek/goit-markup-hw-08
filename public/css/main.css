@@ -2402,6 +2402,7 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 40px;
+  text-align: left;
 }
 .mobile__menu-link:hover, .mobile__menu-link:focus, .mobile__menu-link:active {
   color: #2196f3;
