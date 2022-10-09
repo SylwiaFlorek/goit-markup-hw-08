@@ -247,14 +247,14 @@ footer{
       font-style: normal;
       color: $primary-color;
       padding-top: 20px;
-      
+      text-align: left;
     }
 
     &__links {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      text-align:left;
+      
       gap: 9px;
       margin: 9px 0;
     }
