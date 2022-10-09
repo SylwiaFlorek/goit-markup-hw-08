@@ -1980,15 +1980,15 @@
 }
 .modal__icon-position1 {
   top: 130px;
-  left: 20px;
+  left: 35px;
 }
 .modal__icon-position2 {
   top: 198px;
-  left: 20px;
+  left: 35px;
 }
 .modal__icon-position3 {
   top: 265px;
-  left: 20px;
+  left: 35px;
 }
 
 @media (min-width: 768px) {
