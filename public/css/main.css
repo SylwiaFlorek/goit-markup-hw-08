@@ -1829,8 +1829,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
-  min-height: 581px;
+  width: 100%;
+  min-height: 100%;
   background-color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1845,6 +1845,7 @@
   font-size: 12px;
   gap: 10px;
   color: #757575;
+  overflow: hidden;
 }
 .modal__close-button {
   position: absolute;
@@ -1862,7 +1863,7 @@
   font-weight: 700;
   line-height: 1.172;
   color: #212121;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 0 0;
   width: 370px;
   text-align: center;
 }
@@ -1876,7 +1877,7 @@
   fill: #2196f3;
 }
 .modal__input {
-  width: 370px;
+  width: 305px;
   height: 40px;
   display: block;
   margin: 4px 0 0 0;
@@ -1889,8 +1890,8 @@
 }
 .modal__comment {
   resize: none;
-  width: 370px;
-  height: 120px;
+  width: 305px;
+  height: 90px;
   padding: 12px 16px;
   border-radius: 4px;
   outline: none;
@@ -1915,8 +1916,8 @@
 .modal__button {
   background-color: #2196f3;
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
+  width: 150px;
+  height: 37.5px;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -1924,8 +1925,8 @@
   cursor: pointer;
 }
 .modal__terms-and-conditions {
-  font-size: 14px;
-  padding: 10px 0 20px 0;
+  font-size: 10px;
+  padding: 10px 0 10px 10px;
 }
 .modal__terms-and-conditions input {
   position: absolute;
@@ -1943,10 +1944,10 @@
 .modal__checkmark {
   position: absolute;
   cursor: pointer;
-  top: 455px;
-  left: 45px;
-  height: 16px;
-  width: 16px;
+  top: 425px;
+  left: 18px;
+  height: 13px;
+  width: 13px;
   border-radius: 2px;
   background-color: #fff;
   border: #212121 2px solid;
@@ -1961,8 +1962,8 @@
   width: 11px;
   height: 8px;
   position: absolute;
-  left: 48px;
-  top: 459px;
+  left: 18px;
+  top: 427px;
   z-index: 999;
 }
 .modal__links {
@@ -1978,16 +1979,16 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__icon-position1 {
-  top: 149px;
-  left: 52px;
+  top: 134px;
+  left: 30px;
 }
 .modal__icon-position2 {
-  top: 218px;
-  left: 52px;
+  top: 203px;
+  left: 30px;
 }
 .modal__icon-position3 {
-  top: 289px;
-  left: 52px;
+  top: 274px;
+  left: 30px;
 }
 
 @media (min-width: 768px) {

@@ -18,8 +18,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  min-height: 581px;
+  width: 100%;
+  min-height: 100%;
   background-color: $primary-color;
   align-items: center;
   display: flex;
@@ -27,6 +27,7 @@
   font-size: 12px;
   gap: 10px;
   color: $primary-text;
+  overflow: hidden;
 
   &__close-button {
     position: absolute;
@@ -44,7 +45,7 @@
     font-weight: 700;
     line-height: 1.172;
     color: $secondary-text;
-    margin: 40px 0 20px 0;
+    margin: 40px 0 0 0;
     width: 370px;
     text-align: center;
   }
@@ -60,7 +61,7 @@
     fill: $hover-text;
   }
   &__input {
-    width: 370px;
+    width: 305px;
     height: 40px;
     display: block;
     margin: 4px 0 0 0;
@@ -72,8 +73,8 @@
   }
   &__comment {
     resize: none;
-    width: 370px;
-    height: 120px;
+    width: 305px;
+    height: 90px;
     padding: 12px 16px;
     border-radius: 4px;
     outline: none;
@@ -86,8 +87,8 @@
   &__button {
     background-color: $hover-text;
     border-radius: 4px;
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 37.5px;
     border: none;
     color: $primary-color;
     font-weight: 700;
@@ -95,8 +96,8 @@
     cursor: pointer;
   }
   &__terms-and-conditions {
-    font-size: 14px;
-    padding: 10px 0 20px 0;
+    font-size: 10px;
+    padding: 10px 0 10px 10px;
 
     & input {
       position: absolute;
@@ -115,10 +116,10 @@
   &__checkmark {
     position: absolute;
     cursor: pointer;
-    top: 455px;
-    left: 45px;
-    height: 16px;
-    width: 16px;
+    top: 425px;
+    left: 18px;
+    height: 13px;
+    width: 13px;
     border-radius: 2px;
     background-color: $primary-color;
     border: $secondary-text 2px solid;
@@ -133,8 +134,8 @@
     width: 11px;
     height: 8px;
     position: absolute;
-    left: 48px;
-    top: 459px;
+    left: 18px;
+    top: 427px;
     z-index: 999;
   }
   &__links {
@@ -150,16 +151,16 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &-position1 {
-      top: 149px;
-      left: 52px;
+      top: 134px;
+      left: 30px;
     }
     &-position2 {
-      top: 218px;
-      left: 52px;
+      top: 203px;
+      left: 30px;
     }
     &-position3 {
-      top: 289px;
-      left: 52px;
+      top: 274px;
+      left: 30px;
     }
   }
 }
