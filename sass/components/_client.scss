@@ -1,6 +1,6 @@
 @media (min-width: 305px) {
 .client {
-  @include flexCenter(row);
+  @include flexCenter(column);
     gap: 30px;
     padding: 60px 15px 60px 15px;
     justify-content: center;
