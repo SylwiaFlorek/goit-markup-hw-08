@@ -988,16 +988,16 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 30px;
-    padding: 60px 15px 60px 15px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    justify-content: center;
   }
   .client__logo {
     border-radius: 4px;
     border: #afb1b8 solid 1px;
     width: 210px;
     height: 92px;
+    padding-left: 26px;
     fill: #afb1b8;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1036,6 +1036,9 @@
     fill: #afb1b8;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .client__logo:hover,
 .client__logo :focus {
