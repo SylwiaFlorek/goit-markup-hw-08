@@ -1408,6 +1408,7 @@
     color: #fff;
     text-transform: uppercase;
     margin: 20px 0 20px 0px;
+    text-align: left;
   }
   .footer__icons {
     display: -webkit-box;
