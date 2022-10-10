@@ -1391,8 +1391,7 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 9px;
-    margin: 9px 0;
+    margin: 9px 110px 10px 0px;
   }
   .footer__link {
     color: rgba(255, 255, 255, 0.6);
