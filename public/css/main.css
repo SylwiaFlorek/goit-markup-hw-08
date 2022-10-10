@@ -1829,8 +1829,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 100%;
-  min-height: 100%;
+  width: 450px;
+  min-height: 581px;
   background-color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1845,7 +1845,6 @@
   font-size: 12px;
   gap: 10px;
   color: #757575;
-  overflow: hidden;
 }
 .modal__close-button {
   position: absolute;
@@ -1863,7 +1862,7 @@
   font-weight: 700;
   line-height: 1.172;
   color: #212121;
-  margin: 40px 0 0 0;
+  margin: 40px 0 20px 0;
   width: 370px;
   text-align: center;
 }
@@ -1877,7 +1876,7 @@
   fill: #2196f3;
 }
 .modal__input {
-  width: 305px;
+  width: 370px;
   height: 40px;
   display: block;
   margin: 4px 0 0 0;
@@ -1890,8 +1889,8 @@
 }
 .modal__comment {
   resize: none;
-  width: 305px;
-  height: 90px;
+  width: 370px;
+  height: 120px;
   padding: 12px 16px;
   border-radius: 4px;
   outline: none;
@@ -1916,8 +1915,8 @@
 .modal__button {
   background-color: #2196f3;
   border-radius: 4px;
-  width: 150px;
-  height: 37.5px;
+  width: 200px;
+  height: 50px;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -1925,8 +1924,9 @@
   cursor: pointer;
 }
 .modal__terms-and-conditions {
-  font-size: 10px;
-  padding: 10px 0 10px 10px;
+  font-size: 11px;
+  padding: 10px 0 20px 0;
+  margin: 0 0 0 15px;
 }
 .modal__terms-and-conditions input {
   position: absolute;
@@ -1943,12 +1943,12 @@
 }
 .modal__checkmark {
   position: absolute;
-  cursor: pointer;
-  top: 425px;
-  left: 18px;
-  height: 13px;
-  width: 13px;
+  top: 474px;
+  left: 45px;
+  height: 16px;
+  width: 16px;
   border-radius: 2px;
+  cursor: pointer;
   background-color: #fff;
   border: #212121 2px solid;
 }
@@ -1962,8 +1962,8 @@
   width: 11px;
   height: 8px;
   position: absolute;
-  left: 18px;
-  top: 427px;
+  left: 48px;
+  top: 478px;
   z-index: 999;
 }
 .modal__links {
@@ -1979,31 +1979,20 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__icon-position1 {
-  top: 130px;
-  left: 25px;
+  top: 149px;
+  left: 52px;
 }
 .modal__icon-position2 {
-  top: 198px;
-  left: 25px;
+  top: 218px;
+  left: 52px;
 }
 .modal__icon-position3 {
-  top: 265px;
-  left: 25px;
+  top: 285px;
+  left: 52px;
 }
 
 @media (min-width: 768px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 450px;
-    min-height: 581px;
-    background-color: #fff;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2011,20 +2000,31 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 450px;
+    min-height: 581px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 12px;
     gap: 10px;
+    background-color: #fff;
     color: #757575;
   }
   .modal__close-button {
     position: absolute;
     top: 8px;
     right: 8px;
+    width: 30px;
+    height: 30px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
   }
   .modal__header {
     font-size: 20px;
@@ -2045,13 +2045,13 @@
     fill: #2196f3;
   }
   .modal__input {
+    display: block;
     width: 370px;
     height: 40px;
-    display: block;
+    padding: 0 0 0 30px;
     margin: 4px 0 0 0;
     border-radius: 4px;
     border: rgba(33, 33, 33, 0.2) 1px solid;
-    padding: 0 0 0 30px;
     outline: none;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2093,8 +2093,9 @@
     cursor: pointer;
   }
   .modal__terms-and-conditions {
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px 0 20px 0;
+    margin: 0 0 0 12px;
   }
   .modal__terms-and-conditions input {
     position: absolute;
@@ -2111,12 +2112,13 @@
   }
   .modal__checkmark {
     position: absolute;
-    cursor: pointer;
+    margin: 22px -5px;
     top: 455px;
     left: 45px;
     height: 16px;
     width: 16px;
     border-radius: 2px;
+    cursor: pointer;
     background-color: #fff;
     border: #212121 2px solid;
   }
@@ -2130,8 +2132,8 @@
     width: 11px;
     height: 8px;
     position: absolute;
-    left: 48px;
-    top: 459px;
+    left: 43px;
+    top: 481px;
     z-index: 999;
   }
   .modal__links {
@@ -2155,7 +2157,7 @@
     left: 52px;
   }
   .modal__icon-position3 {
-    top: 289px;
+    top: 285px;
     left: 52px;
   }
 }
@@ -2164,11 +2166,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 528px;
-    min-height: 581px;
-    background-color: #fff;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2181,6 +2178,11 @@
             flex-direction: column;
     font-size: 12px;
     gap: 10px;
+    width: 528px;
+    min-height: 581px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #fff;
     color: #757575;
   }
   .modal__close-button {
@@ -2254,9 +2256,9 @@
     width: 200px;
     height: 50px;
     border: none;
-    color: #fff;
     font-weight: 700;
     font-size: 16px;
+    color: #fff;
     cursor: pointer;
   }
   .modal__terms-and-conditions {
@@ -2278,14 +2280,14 @@
   }
   .modal__checkmark {
     position: absolute;
-    cursor: pointer;
-    top: 455px;
-    left: 45px;
+    top: 432px;
+    left: 50px;
     height: 16px;
     width: 16px;
     border-radius: 2px;
     background-color: #fff;
     border: #212121 2px solid;
+    cursor: pointer;
   }
   .modal__checkmark:after {
     content: "";
