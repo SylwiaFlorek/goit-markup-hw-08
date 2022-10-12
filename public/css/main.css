@@ -2474,6 +2474,7 @@
   gap: 18px;
 }
 .mobile__menu-link {
+  word-wrap: break-word;
   color: #212121;
   text-decoration: none;
   font-weight: 400;
@@ -2516,6 +2517,7 @@
   color: #757575;
 }
 .mobile__social {
+  word-wrap: break-word;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

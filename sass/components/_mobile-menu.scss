@@ -54,6 +54,7 @@
     gap: 18px;
 
     &-link {
+      word-wrap: break-word;
       color: $secondary-text;
       text-decoration: none;
       font-weight: $font-regular;
@@ -90,6 +91,7 @@
     }
   }
   &__social {
+    word-wrap: break-word;
     display: flex;
     flex-direction: row;
     gap: 10px;
