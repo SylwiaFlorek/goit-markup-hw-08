@@ -91,7 +91,7 @@
     }
   }
   &__social {
-    word-wrap: break-word;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     gap: 10px;

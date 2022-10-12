@@ -2517,7 +2517,8 @@
   color: #757575;
 }
 .mobile__social {
-  word-wrap: break-word;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
