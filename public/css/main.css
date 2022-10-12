@@ -2386,7 +2386,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 200px;
+  gap: 250px;
   overflow-y: auto;
   text-align: left;
   -webkit-transform: translateX(100%);
