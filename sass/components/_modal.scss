@@ -42,6 +42,7 @@
     width: 30px;
     height: 30px;
   }
+  
   &__header {
     font-size: 20px;
     font-weight: 400;
@@ -96,6 +97,15 @@
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
+  }
+  &__button:hover {
+    background-color:#2196f3;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgb(197 197 197/ 12%), 0px 1px 1px rgb(197 197 197),
+      0px 2px 1px rgb(197 197 197/ 20%);
+  }
+  &__button:active {
+    box-shadow: inset 1px 1px 1px 1px hsla(0, 0%, 0%, 0.3);
   }
   &__terms-and-conditions {
     font-size: 10px;
@@ -249,6 +259,15 @@
       font-size: 16px;
       cursor: pointer;
     }
+    &__button:hover {
+      background-color:#2196f3;
+      cursor: pointer;
+      box-shadow: 0px 1px 3px rgb(197 197 197/ 12%), 0px 1px 1px rgb(197 197 197),
+        0px 2px 1px rgb(197 197 197/ 20%);
+    }
+    &__button:active {
+      box-shadow: inset 1px 1px 1px 1px hsla(0, 0%, 0%, 0.3);
+    }
     &__terms-and-conditions {
       font-size: 12px;
       padding: 10px 0 10px 0;
@@ -399,6 +418,15 @@
       font-weight: 700;
       font-size: 16px;
       cursor: pointer;
+    }
+    &__button:hover {
+      background-color:#2196f3;
+      cursor: pointer;
+      box-shadow: 0px 1px 3px rgb(197 197 197/ 12%), 0px 1px 1px rgb(197 197 197),
+        0px 2px 1px rgb(197 197 197/ 20%);
+    }
+    &__button:active {
+      box-shadow: inset 1px 1px 1px 1px hsla(0, 0%, 0%, 0.3);
     }
     &__terms-and-conditions {
       font-size: 14px;
