@@ -19,8 +19,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  min-height: 581px;
+  width: 400px;
+  min-height: 500px;
   background-color: $primary-color;
   align-items: center;
   display: flex;
@@ -119,7 +119,7 @@
     position: absolute;
     cursor: pointer;
     top: 415px;
-    left: 70px;
+    left: 50px;
     height: 13px;
     width: 13px;
     border-radius: 2px;
@@ -136,7 +136,7 @@
     width: 11px;
     height: 8px;
     position: absolute;
-    left: 70px;
+    left: 51px;
     top: 417px;
     z-index: 999;
   }
@@ -154,15 +154,15 @@
 
     &-position1 {
       top: 130px;
-      left: 85px;
+      left: 63px;
     }
     &-position2 {
       top: 196px;
-      left: 85px;
+      left: 63px;
     }
     &-position3 {
       top: 258px;
-      left: 85px;
+      left: 63px;
     }
   }
 }
@@ -270,7 +270,7 @@
     &__checkmark {
       position: absolute;
       cursor: pointer;
-      top: 478px;
+      top: 485px;
       left: 40px;
       height: 14px;
       width: 14px;
@@ -289,7 +289,7 @@
       height: 8px;
       position: absolute;
       left: 42px;
-      top: 480px;
+      top: 486px;
       z-index: 999;
     }
     &__links {
@@ -305,15 +305,15 @@
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &-position1 {
-        top: 149px;
+        top: 155px;
         left: 52px;
       }
       &-position2 {
-        top: 218px;
+        top: 225px;
         left: 52px;
       }
       &-position3 {
-        top: 289px;
+        top: 294px;
         left: 52px;
       }
     }
@@ -421,7 +421,7 @@
     &__checkmark {
       position: absolute;
       cursor: pointer;
-      top: 455px;
+      top: 464px;
       left: 45px;
       height: 16px;
       width: 16px;
@@ -440,7 +440,7 @@
       height: 8px;
       position: absolute;
       left: 48px;
-      top: 459px;
+      top: 467px;
       z-index: 999;
     }
     &__links {
@@ -456,15 +456,15 @@
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &-position1 {
-        top: 125px;
+        top: 130px;
         left: 52px;
       }
       &-position2 {
-        top: 194px;
+        top: 200px;
         left: 52px;
       }
       &-position3 {
-        top: 260px;
+        top: 270px;
         left: 52px;
       }
     }
