@@ -1863,7 +1863,7 @@
   .modal__close-button {
     position: absolute;
     top: 8px;
-    right: 65px;
+    right: 40px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -2126,7 +2126,7 @@
     position: absolute;
     cursor: pointer;
     top: 485px;
-    left: 40px;
+    left: 30px;
     height: 14px;
     width: 14px;
     border-radius: 2px;
@@ -2143,8 +2143,8 @@
     width: 11px;
     height: 8px;
     position: absolute;
-    left: 42px;
-    top: 486px;
+    left: 31px;
+    top: 487px;
     z-index: 999;
   }
   .modal__links {
